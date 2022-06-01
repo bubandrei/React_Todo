@@ -13,7 +13,17 @@ const App = () => {
 
   };
   return (
-    <div>Hello Todo</div>
+    <div>
+      <div>
+        <h2>Task list: {todos.length}</h2>
+      </div>
+      <ToDoForm addTask={addTask} />
+      {todos.map((todo) => {
+        return (
+          <Todo />
+        )
+      })}
+    </div>
   )
 }
 export default App;
