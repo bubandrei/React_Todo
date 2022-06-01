@@ -29,6 +29,7 @@ const ToDoForm = (props) => {
                     type='text'
                     onChange={handleChange}
                     onKeyDown={handlePress}
+                    placeholder='enter text'
                 ></input>
                 <button>Save</button>
             </form>
