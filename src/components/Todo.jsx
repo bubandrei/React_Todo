@@ -1,7 +1,7 @@
 import React from "react";
 
-const ToDo = () => {
-    
+const ToDo = ({ todo, toggle, removeTask }) => {
+
     return (
         <div>I'm Todo</div>
     )

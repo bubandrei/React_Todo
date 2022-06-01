@@ -3,7 +3,6 @@ import { useState } from "react";
 import ToDo from "./components/Todo";
 import ToDoForm from "./components/TodoForm";
 
-
 const App = () => {
   const [todos, setTodos] = useState([]);
   const addTask = (id) => {
