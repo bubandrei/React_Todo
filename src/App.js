@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import ToDo from "./components/Todo";
+import ToDoForm from "./components/TodoForm";
+
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -20,7 +23,7 @@ const App = () => {
       <ToDoForm addTask={addTask} />
       {todos.map((todo) => {
         return (
-          <Todo
+          <ToDo
             key={todo.id}
             todo={todo}
             toggle={toggle}
