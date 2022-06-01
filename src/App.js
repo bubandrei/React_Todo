@@ -20,7 +20,12 @@ const App = () => {
       <ToDoForm addTask={addTask} />
       {todos.map((todo) => {
         return (
-          <Todo />
+          <Todo
+            key={todo.id}
+            todo={todo}
+            toggle={toggle}
+            removeTask={removeTask}
+          />
         )
       })}
     </div>
