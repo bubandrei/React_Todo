@@ -22,7 +22,7 @@ const App = () => {
     setTodos([...todos.filter(el => el.id !== id)])
   };
   const toggle = (id) => {
-    setTodos([...todos.map((el) => 
+    setTodos([...todos.map((el) =>
       el.id === id ? { ...el, crossOut: !el.crossOut } : { ...el }
     )])
 
