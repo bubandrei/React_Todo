@@ -11,6 +11,7 @@ const App = () => {
       const newNote = {
         id: nanoid(),
         note: userInput,
+        crossOut: false
       };
       setTodos([...todos, newNote]);
     }
@@ -20,6 +21,9 @@ const App = () => {
     setTodos([...todos.filter(el => el.id != id)])
   };
   const toggle = (id) => {
+    setTodos([...todos.map(el => {
+      el.id === id ? { ...el, crossOut: !el.crossOut } : { ...el }
+    })])
 
   };
   return (
