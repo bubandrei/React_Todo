@@ -27,4 +27,29 @@
 }
 
 
-.itemRemove {}
+.itemRemove {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    font-size: 22px;
+    position: relative;
+    left: -4px;
+    bottom: 5px;
+}
+
+input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid lightcoral;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    padding: 16px 7px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: coral;
+}
