@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-const ToDoForm = (props) => {
+const ToDoForm = ({addTask}) => {
 
     const [userInput, setUserInput] = useState('');
-
+//current value
     const handleChange = (e) => {
         setUserInput(e.currentTarget.value);
     };
-
+//
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.addTask(userInput);
+        addTask(userInput);
         setUserInput('');
     };
-
+//
     const handlePress = (e) => {
         if (e.key === 'Enter') {
             handleSubmit(e);
@@ -30,7 +30,7 @@ const ToDoForm = (props) => {
                     onChange={handleChange}
                     onKeyDown={handlePress}
                     placeholder='enter text'
-                ></input>
+                />
                 <button>Save</button>
             </form>
         </>

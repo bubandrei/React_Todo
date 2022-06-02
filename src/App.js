@@ -5,10 +5,10 @@ import ToDoForm from "./components/TodoForm";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
-  const addTask = (id) => {
-
+  const addTask = (userInput) => {
+    setTodos([...todos, userInput]);
   };
-  const removeTask = (id) => {
+  const remove = (id) => {
 
   };
   const toggle = (id) => {
@@ -26,7 +26,7 @@ const App = () => {
             key={todo.id}
             todo={todo}
             toggle={toggle}
-            removeTask={removeTask}
+            removeTask={remove}
           />
         )
       })}
