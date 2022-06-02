@@ -3,10 +3,12 @@ import { useState } from "react";
 import ToDo from "./components/Todo";
 import ToDoForm from "./components/TodoForm";
 import { nanoid } from "nanoid";
+import style from './components/Todo.module.css'
 
 const App = () => {
   const [todos, setTodos] = useState([]);
   const addTask = (userInput) => {
+    debugger
     if (userInput) {
       const newNote = {
         id: nanoid(),
@@ -18,16 +20,16 @@ const App = () => {
 
   };
   const remove = (id) => {
-    setTodos([...todos.filter(el => el.id != id)])
+    setTodos([...todos.filter(el => el.id !== id)])
   };
   const toggle = (id) => {
-    setTodos([...todos.map(el => {
+    setTodos([...todos.map((el) => 
       el.id === id ? { ...el, crossOut: !el.crossOut } : { ...el }
-    })])
+    )])
 
   };
   return (
-    <div>
+    <div className={style.wrap}>
       <div>
         <h2>Task list: {todos.length}</h2>
       </div>
