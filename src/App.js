@@ -8,7 +8,6 @@ import style from './components/Todo.module.css'
 const App = () => {
   const [todos, setTodos] = useState([]);
   const addTask = (userInput) => {
-    debugger
     if (userInput) {
       const newNote = {
         id: nanoid(),

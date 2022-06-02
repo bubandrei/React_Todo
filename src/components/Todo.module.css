@@ -1,3 +1,30 @@
-.wrap{
+.wrap {
     text-align: center;
 }
+
+.itemTodo {
+    padding: 15px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 15px;
+    background: linear-gradient(90deg,
+            rgb(227, 190, 96) 0%,
+            rgb(192, 227, 116) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.itemSimple {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.itemCrossOut {
+    text-decoration: line-through;
+}
+
+
+.itemRemove {}
