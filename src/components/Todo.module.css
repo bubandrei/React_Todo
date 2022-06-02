@@ -2,34 +2,35 @@
     text-align: center;
 }
 
-.itemTodo {
+.wrap .itemTodo {
     padding: 15px;
     width: 250px;
     margin: 0 auto;
     text-align: left;
     margin-top: 15px;
     background: linear-gradient(90deg,
-            rgb(227, 190, 96) 0%,
-            rgb(192, 227, 116) 100%);
+            rgb(235, 146, 94) 0%,
+           coral 100%);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.itemSimple {
+.wrap .itemSimple {
     display: inline-block;
-    cursor: pointer;
 }
 
-.itemCrossOut {
+.wrap .itemCrossOut {
+    display: inline-block;
     text-decoration: line-through;
 }
 
 
-.itemRemove {
+.wrap .itemRemove {
     display: inline-block;
     cursor: pointer;
+    right: 100%;
     float: right;
     font-size: 22px;
     position: relative;
@@ -37,15 +38,15 @@
     bottom: 5px;
 }
 
-input {
-    padding: 14px 32px 14px 16px;
+.wrap input {
+    padding: 14px 40px 14px 20px;
     border-radius: 4px 0 0 4px;
     border: 2px solid lightcoral;
     outline: none;
     background: transparent;
 }
 
-button {
+.wrap button {
     padding: 16px 7px;
     border-radius: 0 4px 4px 0;
     border: none;
